@@ -14,5 +14,5 @@ class Post(models.Model):
     	self.published_date=timezone.now()
     	self.save()
 
-    def _str_(self):
-    	return self.tilte
+    def __str__(self):
+    	return self.title
